@@ -4,11 +4,11 @@ framse y los vamoa a hacer girar alterar y tranaformar*/
 @keyframes animacion_test{
 
     from{
-        background-color: teal;
+        background-color: rgb(19, 228, 228);
     }
 
     to{
-        background-color: aqua;
+        background-color: rgb(255, 0, 149);
     }
 }
 
@@ -27,11 +27,79 @@ framse y los vamoa a hacer girar alterar y tranaformar*/
 
     from{
         transform: rotate(0deg);
-        margin-left: 0;
+        margin-left: 85vw;
     }
     to{
         transform: rotate(180deg);
-        margin: 85vw;
+        margin: 0vw;
     }
+}
+
+/*vamos a dar las reglas de las clases*/
+.cuerpo{
+    background-color: black ;
+    
+}
+
+.label-container{
+    width: 100%;
+    height: 5px;
+    padding: 2rem;
+    box-sizing: border-box;
+
+}
+
+.label{
+    width: 64px;
+    background-color: orangered;
+    color: white ;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    /*vamos a animar con las animaciones que ya creamos*/
+    animation-name: label-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.loader{
+
+    width: 64px;
+    height: 64px;
+    border: solid red;
+    border-top: solid rgb(123, 321, 563);
+    border-radius: 50%;
+    animation: girar 2s linear infinite;
+
+}
+
+.loader-doble{
+
+    width: 64px;
+    height: 64px;
+    border: 16px solid red;
+    border-top: 16px solid rgb(123, 321, 563);
+    border-bottom: 16px solid orangered;
+    border-radius: 50%;
+    animation: girar 2s ease-in-out infinite;
+}
+
+.animada{
+    width: 100%;
+    background-color: cyan;
+    color: white;
+    text-align: center;
+    height: 200px;
+    display: flex; /*nos permte maquetar como se va a viusalizar*/
+    justify-content: center;
+    align-items: center;
+    animation-name: animacion_test;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
 }
 
