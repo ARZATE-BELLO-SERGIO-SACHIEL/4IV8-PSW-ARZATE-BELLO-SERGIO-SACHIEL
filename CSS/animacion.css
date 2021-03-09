@@ -93,7 +93,6 @@ framse y los vamoa a hacer girar alterar y tranaformar*/
     color: white;
     text-align: center;
     height: 200px;
-    display: flex; /*nos permte maquetar como se va a viusalizar*/
     justify-content: center;
     align-items: center;
     animation-name: animacion_test;
