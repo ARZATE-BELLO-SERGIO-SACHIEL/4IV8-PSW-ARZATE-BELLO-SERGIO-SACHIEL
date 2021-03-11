@@ -1,0 +1,56 @@
+
+.datos-personales{
+
+    border: 4px solid black;
+    border-radius: 20px;
+    margin: 1rem;
+    background-color: cyan;
+}
+
+.tabla{
+    margin: 1rem;
+    width: fit-content;
+}
+
+tr,th{
+    border: solid 5px black;
+    background-color: blueviolet;
+}
+
+td{
+    background-color: cyan;
+}
+
+.foto{
+    width: 30%;
+    height: 30px;
+}
+
+.datos{
+    width: 100%;
+    text-align-last: left;
+}
+
+.escuela{
+
+    border: 4px solid black;
+    border-radius: 20px;
+    margin: 1rem;
+    background-color: aqua;
+}
+
+.cursos{
+
+    border: 4px solid black;
+    border-radius: 20px;
+    margin: 1rem;
+    background-color: aqua;
+
+}
+
+.tabla2{
+
+    align-items: center;
+    
+}
+
