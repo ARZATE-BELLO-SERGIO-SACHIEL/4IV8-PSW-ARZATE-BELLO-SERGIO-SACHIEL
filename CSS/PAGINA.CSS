@@ -1,0 +1,60 @@
+/*selectores 
+clases 
+identificadores
+
+selectores */
+html{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 90%;
+    background-color: rgb(0, 28, 70);
+    display: block;
+    margin: auto;
+}
+
+
+div{
+    background-color:cyan;
+    margin: 2rem;
+    border: 5PX solid white;
+    border-radius: 10px;  
+    width: 90%;
+    display: block;
+     
+}
+
+body{
+    background-color:  rgb(0, 28, 70);
+}
+
+.destacada{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    width: 100%;
+}
+
+.destacada1{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: deeppink;
+}
+
+.imagen{
+    border: solid white;
+    display: block;
+    margin: auto;
+    
+}
+
+#footer{
+
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: yellow;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
