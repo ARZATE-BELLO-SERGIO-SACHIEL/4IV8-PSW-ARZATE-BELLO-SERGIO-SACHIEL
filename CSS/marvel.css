@@ -1,0 +1,108 @@
+@keyframes colores{
+
+    from{
+        background-color: mediumorchid;
+    }
+
+    to{
+        background-color: mediumslateblue;
+    }
+}
+
+body{
+    background-color: midnightblue;
+    
+}
+
+a{
+    color: black;
+    font-size: 40px;
+    align-self: center;
+    text-align: center;
+}
+
+h2{
+    text-align: justify;
+    text-indent: 1rem;
+}
+
+pre{
+    font-size: 20px;
+}
+
+p{
+    text-align: justify;
+    font-size: 30px;
+}
+
+.principal{
+    background-color: black;
+    border: solid white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 98%;
+    height: 98%;
+    align-items: center;
+}
+#menu{
+    border: solid white;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: red;
+    text-align: center;
+    align-items: center;
+}
+
+.contenedor{
+    border: solid white;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: mediumturquoise;
+    text-align: center;
+    width: 99%;
+    height: 500px;
+    align-self: center;
+    align-items: center;
+    overflow-y: scroll;
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+.tabla{
+    border-radius: 15px;
+}
+
+
+img{
+    width: 99%;
+    border: solid black 5px;
+    border-radius: 15px;
+}
+
+ol{
+
+    text-align: left;
+    font-size: 30px;
+}
+
+.sugerencias{
+    background-color: aqua;
+    border: solid black;
+    align-self: flex-end;
+    width: 20%;
+    height: 400px;
+    position: ;
+    float: right;
+
+}   
+
+.pies{
+    border: solid white;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: red;
+}
+
