@@ -8,7 +8,7 @@ body{
 nav{
     border: solid 5px;
     border-radius: 10px;
-    background-color: darkblue;
+    background-color: #121212;
 }
 
 a{
@@ -21,12 +21,58 @@ h1{
     color: aliceblue;
 }
 
-table{
-    padding: 5px;
+P{
+    text-align: justify;
+    font-size: 20px;
 }
-#ascii{
+
+@media (max-width: 1000px){
+
+    table{
+       width: 100%;
+    }
+
+    thead{
+        display: none;
+    }
+
+    tr:nth-of-type(2n){
+        background-color:inherit;
+    }
+
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+
     
 }
+
+@media (max-width: 2000px){
+    video{
+        width: 100%;
+    }
+    
+    audio{
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
 
 td{
     color: cyan;
@@ -37,6 +83,64 @@ td{
 video{
     width: au;
 }
+
+
+
+#uno{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/51O7k2hqS1L._SY355_.jpg);
+    no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-spacing: 20px;
+   
+}
+
+#dos{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/71VZjASx2kL._AC_SL1400_.jpg);
+    no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-spacing: 20px;
+}
+#tres{
+    background-image: url(https://i.discogs.com/R-11082494-1509532163-2974.jpeg?bucket=discogs-images&fit=contain&format=auto&height=600&quality=90&width=600&signature=Z7FL27LSTRck0xTBJwVTGh4LUTAjpbjiHQS1GxGK/5Q%3D);
+    no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-spacing: 20px;
+}
+
+#mc{
+    border: solid mediumorchid;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#era{
+    border: solid mediumorchid;
+    border-radius: 20px;
+    width: 50%;
+}
+
+#N{
+    width: 400px;
+}
+
+#v{
+    width: 100%;
+    height: 900px;
+    align-self: center;
+}
+
+
+
+
 
 .container{
     display: -webkit-flex;
@@ -49,14 +153,38 @@ video{
 .columna1{
     width: 100%;
 }
+
 .columna2{
     background-color: #121212;
     width: 50%;
     border: solid cyan;
     border-radius: 20px;
-    padding: 1%;
+    padding: 2%;
     float: left;
     border-top-left-radius: 0px;
+    margin-bottom: 3% ;
+}
+
+.columna_musica_m{
+    background-color: #121212;
+    width: 96%;
+    border: solid cyan;
+    border-radius: 20px;
+    padding: 2%;
+    float: left;
+    border-top-left-radius: 0px;
+    margin-bottom: 3% ;
+}
+
+.columna_peliculas{
+    background-color: #121212;
+    width: 96%;
+    border: solid cyan;
+    border-radius: 20px;
+    padding: 2%;
+    float: left;
+    border-top-left-radius: 0px;
+    margin-bottom: 3% ;
 }
 
 .columna3{
@@ -67,7 +195,7 @@ video{
     padding: 1%;
     float: right;
     border-bottom-right-radius: 0%;
-    
+    margin-bottom: 3% ;
 }
 
 .columna3_3{
@@ -77,7 +205,18 @@ video{
     border-radius: 20px;
     padding: 1%;
     float: right;
-    
+    border-top-right-radius: 0px;
+    margin-bottom: 3% ;
+}
+.columna_musica{
+    background-color: #121212;
+    width: 80%;
+    border: solid cyan;
+    border-radius: 20px;
+    padding: 2%;
+    float: right;
+    border-top-right-radius: 0px;
+    margin-bottom: 3%;
 }
 
 .columna4{
@@ -87,7 +226,17 @@ video{
     border-radius: 20px;
     padding: 1%;
     float: left;
-    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.columna_peliculasf{
+    background-color: #121212;
+    width: 50%;
+    border: solid cyan;
+    border-radius: 20px;
+    padding: 1%;
+    float: right;
+    border-top-right-radius: 0px;
 }
 
 
@@ -96,7 +245,7 @@ video{
     width: 100%;
     border: solid rgb(255, 0, 242);
     border-radius: 20px;
-    padding: 1%;
+    padding: 3%;
     background: url(https://p4.wallpaperbetter.com/wallpaper/194/796/848/shovel-knight-video-games-pixel-art-retro-games-wallpaper-preview.jpg)
     no-repeat fixed center;
     -webkit-background-size: cover;
@@ -111,7 +260,7 @@ video{
     width: 100%;
     border: solid rgb(255, 0, 242);
     border-radius: 20px;
-    padding: 1%;
+    padding: 2%;
     background: url(https://www.wallpapertip.com/wmimgs/30-305595_cool-iphone-backgrounds-rubiks-cube.jpg)
     no-repeat fixed center;
     -webkit-background-size: cover;
@@ -120,12 +269,76 @@ video{
     background-size: cover;
 }
 
+.container-inner3{
+    background-color: black;
+    width: 95%;
+    height: 100%;
+    border: solid rgb(255, 0, 242);
+    border-radius: 20px;
+    padding: 2%;
+    background: url(https://image.freepik.com/vector-gratis/ilustracion-signo-estilo-neon-rock-and-roll_189374-151.jpg)
+    no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-inner4{
+    background-color: black;
+    width: 95%;
+    height: 100%;
+    border: solid rgb(255, 0, 242);
+    border-radius: 20px;
+    padding: 2%;
+    background: url(https://i.pinimg.com/originals/82/ab/0f/82ab0f43c59fbc8342ddf23073fde44b.gif)
+    no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.style_prevu_kit{
+    display: inline-block;
+    border: 0;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+
+}
+
+.style_prevu_kit:hover{
+    box-shadow: 0px 0px 150px black;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.8);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.8);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.8);
+    transition: all 200ms ease-in;
+    transform: scale(1.8);
+}
+
 @media (min-width; 800px){
     .container{
-        width: 800px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         font-size: 12px;
     }
 }
+
+
+
+
 
