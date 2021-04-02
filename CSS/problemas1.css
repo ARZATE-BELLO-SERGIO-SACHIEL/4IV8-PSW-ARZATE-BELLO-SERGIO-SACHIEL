@@ -1,8 +1,18 @@
+body{
+    background-color: midnightblue;
+    color: white;
+}
+
 table{
     border: solid 5px;
     border-color: black;
     border-radius: 20px;
+    background-color: black;
+    color: white;
 }
+
+
+    
 
 .td_sup{
      border-radius: 9px;
@@ -14,22 +24,32 @@ table{
 
 .uno{
     background-color: cyan;
+    border: solid black;
+    padding: 2px;
 }
 
 .dos{
     background-color: red;
+    border: solid black;
+    padding: 5px;
 }
 
 .tres{
     background-color: mediumorchid;
+    border: solid black;
+    padding: 5px;
 }
 
 .cuatro{
     background-color: chocolate;
+    border: solid black;
+    padding: 5px;
 }
 
 .cinco{
     background-color: seagreen;
+    border: solid black;
+    padding: 5px;
 }
 
 .input_text{
@@ -43,7 +63,15 @@ table{
 .boton{
     height: 30px;
     width: 65px;
-    border-radius: 10px;
     background-color: black;
-    color: aliceblue;
+    border-radius: 10px;
+    color: white;
+}
+
+#botonespecial{
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
 }
