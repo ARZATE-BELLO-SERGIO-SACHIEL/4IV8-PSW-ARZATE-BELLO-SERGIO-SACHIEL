@@ -215,6 +215,44 @@ function borrar6(){
     document.formulario6.edad.value = "";
 }
 
+function ValidarValores(v){
+    var teclado = (document.all)?v.KeyCode:v.which;
+    if(teclado == 8)return true;
+
+    var patron = /[0-9\d .]/;
+
+    var prueva = String.fromCharCode(teclado);
+    return patron.test(prueva);
+}
+
+function Calculos(){
+    var valor1 = document.formulario7.num1.value;
+    var num1 = parseFloat(valor1);
+    var valor2 = document.formulario7.num2.value;
+    var num2 = parseFloat(valor2);
+
+    if(num1 == num2){
+        var total = num1*num2
+        document.formulario7.resultado.value = total;
+    }else{
+        if(num1 > num2){
+            var total = num1-num2
+        document.formulario7.resultado.value = total;
+
+        }else{
+            var total = num1+num2
+        document.formulario7.resultado.value = total;
+
+        }
+    }
+}
+
+function Borrar(){
+    document.formulario7.num1.value = "";
+    document.formulario7.num2.value = "";
+    document.formulario7.resultado.value = "";
+}
+
 
  
 
