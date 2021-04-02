@@ -126,7 +126,7 @@
                         parciales
                     </td>
                     <td class="td_inf">
-                        Su total en porcenataje es
+                        Su total en porcenataje es (total 55%)
                     </td>
                 <tr>
                     <td><input type="text" name="calificaciones"
@@ -142,7 +142,7 @@
                         intorduzac la calificacion de su examen final
                     </td>
                     <td class="td_inf">
-                        Su total en porcenataje es
+                        Su total en porcenataje es (total 30%)
                     </td>
                 <tr>
                     <td><input type="text" name="examen"
@@ -155,10 +155,10 @@
                 </tr>
                 <tr>
                     <td class="td_sup">
-                        intorduzaca la calificacion del trabajo final
+                        intorduzaca la calificacion del trabajo final 
                     </td>
                     <td class="td_inf">
-                        Su total en porcenataje es
+                        Su total en porcenataje es (total 15%)
                     </td>
                 <tr>
                     <td><input type="text" name="trabajo"
@@ -191,6 +191,65 @@
                         name="limpiar" onclick="borrar4()" class="boton">
                         <input type="button" value="Calcular" 
                         name="suma" onclick="CalcularCal()" class="boton">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br>
+    <div class="cinco">
+        <form method="POST" name="formulario5">
+            <table align="center" border="">
+            
+                <tr>
+                    <td class="td_sup">
+                        Ingrese el numero de alumnos 
+                    </td>
+                    <td class="td_inf">
+                        Porcentaje de alumnos 
+                    </td>
+                <tr>
+                    <td><input type="text" name="alumnos"
+                        onkeypress="return ValidarAlumnos(event)"></td>
+    
+                    <td>
+                        <input type="text" name="alumnosp"
+                        id="almop" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup">
+                        Ingrese el numero de alumnas
+                    </td>
+                    <td class="td_inf">
+                        porcentaje de alumnas 
+                    </td>
+                <tr>
+                    <td><input type="text" name="alumnas"
+                        onkeypress="return ValidarAlumnos(event)"></td>
+    
+                    <td>
+                        <input type="text" name="alumnasp"
+                        id="almap" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup">
+                        Total de alumnos y alumnas 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="total" 
+                        id="t" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_b">
+                        <input type="button" value="Borrar"
+                        name="limpiar" onclick="borrar5()" class="boton">
+                        <input type="button" value="calcular" 
+                        name="porcentaje" onclick="CalcularPorcentaje()" class="boton">
                     </td>
                 </tr>
             </table>
