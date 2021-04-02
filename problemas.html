@@ -13,19 +13,19 @@
     <div>
         <center><H1>PROBLEMAS SECUENCIALES</H1></center>
     </div>
-    <div>
+    <div class="uno">
         <form method="post" name="formulario">
             <table align="center" border="1">
                 <tr>
                     <td class="td_sup" >Introduce la cantidad a invertir : $</td>
                     <td class="td_inf" ><input type="text" name="cantidad"
-                        onkeypress="return validar(event)"></td>
+                        onkeypress="return validar(event)" class="input_text"></td>
                 </tr>
                 <tr></tr>
                 <tr>
                     <td class="td_sup">Introduce el numero de meses</td>
                     <td class="td_inf"><input type="text" name="mes"
-                        onkeypress="return validar(event)"></td>
+                        onkeypress="return validar(event)" class="input_text"></td>
                 </tr>
                 <tr></tr>
                 <tr>
@@ -36,10 +36,49 @@
                 </tr>
                 <tr></tr>
                 <tr>
-                    <td class="td_inf"><input type="button" value="borrar" 
+                    <td><input type="button" value="borrar" 
                         name="limpiar" onclick="borrar()"></td>
-                    <td class="td_inf" > <input type="button" value="interes"
+                    <td><input type="button" value="interes"
                         name="enviar" onclick="interes()" > </td> 
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br>
+    <div class="dos">
+        <form method="post" name="formulario2">
+            <table align="center" border="1">
+                <tr>
+                    <td class="td_sup">Introduza de cuanto es su salario: $</td>
+                    <td class="td_inf"><input type="text" name="salario"
+                        onkeypress="return validars(event)"></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="td_sup">Introsuzca cuanto vendio en el mes: $</td>
+                    <td class="td_inf"><input type="text" name="ventas"
+                        onkeypress="return validars(event)"></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>Total de comisiones adquiridas: $</td>
+                    <td><input type="text" name="comisiones"
+                        id="ganado" readonly="readonly"></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>Salario con comisiones: $</td>
+                    <td><input type="text" name="salariot"
+                        id="ventast" readonly="readonly"></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="td_b">
+                        <input type="button" value="Borrar"
+                        name="limpiar" onclick="borrar2()" class="boton">
+                        <input type="button" value="Calcular" 
+                        name="suma" onclick="CalcularComisionYSalario()" class="boton">
+                    </td>
                 </tr>
             </table>
         </form>
