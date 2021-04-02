@@ -20,6 +20,14 @@ table{
     background-color: red;
 }
 
+.tres{
+    background-color: mediumorchid;
+}
+
+.cuatro{
+    background-color: chocolate;
+}
+
 .input_text{
     box-shadow: 10px;
     border-radius: 5px;
