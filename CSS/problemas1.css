@@ -1,0 +1,37 @@
+table{
+    border: solid 5px;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.td_sup{
+     border-radius: 9px;
+}
+
+.td_inf{
+    border-bottom-left-radius: 5px;
+}
+
+.uno{
+    background-color: cyan;
+}
+
+.dos{
+    background-color: red;
+}
+
+.input_text{
+    box-shadow: 10px;
+    border-radius: 5px;
+}
+
+.td_b{
+    border: none;
+}
+.boton{
+    height: 30px;
+    width: 65px;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+}
