@@ -255,5 +255,34 @@
             </table>
         </form>
     </div>
+    <br>
+    <div class="uno">
+        <form method="POST" name="formulario6">
+            <table align="center" border="1">
+                <tr>
+                    <td>
+                        Ingrese su año de nacimiento 
+                    </td>
+                    <td><input type="text" name="nacimiento"
+                        onkeypress="return ValidarAno(event)"></td>
+                </tr>
+                <tr>
+                    <td>Usted tiene</td>
+                    <td><input type="text" name="edad" 
+                        id="edadc" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td class="td_b">
+                        <input type="button" value="Calcular edad"
+                        name="edadb" onclick="CalcularEdad()" id="botonespecial">
+                        <input type="button" value="Borrar"
+                        name="eliminar" onclick="borrar6()" class="boton">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br>
+    <center><h1>PROBLEMAS SELECTIVOS COMPUESTOS</h1></center>
 </body>
 </html>
