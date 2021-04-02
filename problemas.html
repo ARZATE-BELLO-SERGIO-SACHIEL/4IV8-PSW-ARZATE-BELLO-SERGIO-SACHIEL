@@ -284,5 +284,49 @@
     </div>
     <br>
     <center><h1>PROBLEMAS SELECTIVOS COMPUESTOS</h1></center>
+    <br>
+    <div class="dos">
+        <form method="POST" name="formulario7">
+            <table align="center" border="1">
+                <tr>
+                    <td>
+                        INGRESE UN NUMERO
+                    </td>
+                    <td>
+                        <input type="text" name="num1"
+                        onkeypress="return ValidarValores(event)">
+                    </td>
+                    <tr>
+                        <td>
+                            INGRESE UN SEGUNDO NUMERO
+                        </td>
+                        <td>
+                            <input type="text" name="num2"
+                            onkeypress="return ValidarValores(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td>
+                            RESULTADO OBTENIDO
+                        </td>
+                        <td>
+                            <input type="text" name="resultado"
+                            id="result" readonly="readonly">
+                        </td>
+                    </tr>
+                        <td>
+                            <input type="button" value="Calcular"
+                            name="operaciones" onclick="Calculos()" class="boton">
+                            <input type="button" value="borrar"
+                            name="eliminar" onclick="Borrar()" class="boton">
+                        </td>
+                    </tr>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br>
+    <div></div>
 </body>
 </html>
