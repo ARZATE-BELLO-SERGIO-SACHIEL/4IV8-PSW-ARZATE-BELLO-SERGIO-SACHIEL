@@ -28,6 +28,10 @@ table{
     background-color: chocolate;
 }
 
+.cinco{
+    background-color: seagreen;
+}
+
 .input_text{
     box-shadow: 10px;
     border-radius: 5px;
