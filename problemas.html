@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/problemas1.css">
-    <script src="/JS/problemas.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/problemas1.css">
+    <script src="./JS/problemas.js"></script>
+    <title>PROBLEMAS</title>
 </head>
 <body>
     <a href="" b></a>
@@ -19,26 +19,25 @@
                 <tr>
                     <td class="td_sup" >Introduce la cantidad a invertir : $</td>
                     <td class="td_inf" ><input type="text" name="cantidad"
-                        onkeypress="return validarn(event)" ></td>
+                        onkeypress="return validar(event)"></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td> 
-                </tr>
+                <tr></tr>
                 <tr>
                     <td class="td_sup">Introduce el numero de meses</td>
                     <td class="td_inf"><input type="text" name="mes"
                         onkeypress="return validar(event)"></td>
                 </tr>
+                <tr></tr>
                 <tr>
                     <td class="td_sup">Su saldo total con interes al 2% es:</td>
-                    <td> <input type="text" name="sueldoti"
-                        id="cantidadi" readonly="readonly" 
-                        class="input_text" > </td>
+                    <td> <input type="text" name="sueldot"
+                        id="cantidadt" readonly="readonly" 
+                        class="input_text" ></td>
                 </tr>
+                <tr></tr>
                 <tr>
-                    <td class="td_sup"><input type="button" value="borrar" 
-                        name="clear" onclick="borrar()"></td>
+                    <td class="td_inf"><input type="button" value="borrar" 
+                        name="limpiar" onclick="borrar()"></td>
                     <td class="td_inf" > <input type="button" value="interes"
                         name="enviar" onclick="interes()" > </td> 
                 </tr>
