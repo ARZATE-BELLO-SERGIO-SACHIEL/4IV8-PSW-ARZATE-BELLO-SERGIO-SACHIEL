@@ -132,16 +132,16 @@ function CalcularCal(){
     var total = valorp+valorexamenp+valortrabajop;
     var totalp = (calfp+exmp+trabp)/10;
 
-    document.formulario4.calificacionesp.value = calfp.toFixed(2);
-    document.formulario4.examenp.value = exmp.toFixed(2);
-    document.formulario4.trabajop.value = trabp.toFixed(2);
-    document.formulario4.total.value = total.toFixed(2);
-    document.formulario4.totalp.value = totalp.toFixed(2);
+    document.formulario4.calificacionesp.value = calfp.toFixed(2)+"%";
+    document.formulario4.examenp.value = exmp.toFixed(2)+"%";
+    document.formulario4.trabajop.value = trabp.toFixed(2)+"%";
+    document.formulario4.total.value = total.toFixed(2)+"%";
+    document.formulario4.totalp.value = totalp.toFixed(2)+"%";
 }
 
 function borrar4(){
     document.formulario4.calificaciones.value = "";
-    document.formulario4.examenp.value = "";
+    document.formulario4.examen.value = "";
     document.formulario4.trabajo.value = "";
     document.formulario4.calificacionesp.value = "";
     document.formulario4.examenp.value = "";
@@ -150,6 +150,37 @@ function borrar4(){
     document.formulario4.totalp.value = "";
 }
 
+function ValidarAlumnos(a){
+    var teclado = (document.all)?a.KeyCode:a.which;
+    if(teclado == 8)return true; 
+
+    var patron = /[0-9\d .]/;
+
+    var prueba = String.fromCharCode(teclado);
+    return patron.test(prueba);
+}
+
+function CalcularPorcentaje(){
+    var valoralumnos = document.formulario5.alumnos.value;
+    var valoralumnospars = parseInt(valoralumnos);
+    var valoralumnas = document.formulario5.alumnas.value;
+    var valoralumnaspars = parseInt(valoralumnas)
+    var total = valoralumnospars+valoralumnaspars;
+
+    document.formulario5.total.value = total;
+
+    var poralumnos = (valoralumnos*100)/total;
+    document.formulario5.alumnosp.value = poralumnos.toFixed(2)+"%";
+
+    var poralumnas = (valoralumnas*100)/total;
+    document.formulario5.alumnasp.value = poralumnas.toFixed(2)+"%";
+}
+
+function borrar5(){
+    document.formulario5.total.value = "";
+    document.formulario5.alumnosp.value = "";
+    document.formulario5.alumnasp.value = "";
+}
 
 
 
