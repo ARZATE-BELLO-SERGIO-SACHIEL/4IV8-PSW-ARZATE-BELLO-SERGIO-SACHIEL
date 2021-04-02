@@ -182,6 +182,38 @@ function borrar5(){
     document.formulario5.alumnasp.value = "";
 }
 
+function ValidarAno(e){
+    var tecalado = (document.all)?e.KeyCode:e.which;
+    if(tecalado == 8)return true;
+
+    var patron = /[0-9\d .]/;
+    
+    var prueva = String.fromCharCode(tecalado);
+    return patron.test(prueva); 
+}
+
+function CalcularEdad(){
+    const fecha = new Date();
+    var hoy = fecha.getFullYear();
+    var hoyparseado = parseInt(hoy)
+    var valor = document.formulario6.nacimiento.value;
+    var nacimiento = parseInt(valor);
+
+    if(nacimiento >= hoyparseado || nacimiento <= 1871){
+        alert("Ingrese un año valido")
+        document.formulario6.nacimiento.focus();
+        return false;
+    }
+
+    var edad = hoyparseado-nacimiento;
+
+    document.formulario6.edad.value = edad+" años";
+}
+
+function borrar6(){
+    document.formulario6.nacimiento.value = "";
+    document.formulario6.edad.value = "";
+}
 
 
  
