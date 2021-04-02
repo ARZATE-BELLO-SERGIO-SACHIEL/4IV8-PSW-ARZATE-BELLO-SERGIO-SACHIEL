@@ -83,5 +83,118 @@
             </table>
         </form>
     </div>
+    <br>
+    <div class="tres">
+        <form method="POST" name="formulario3">
+            <table align="center" border="1">
+                <tr>
+                    <td class="td_sup">Ingrese el total de su compra: $</td>
+                    <td><input type="text" name="compra"
+                        onkeypress="return validard(event)"></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="td_sup">Tiene un descuento de: $</td>
+                    <td><input type="text" name="descuento"
+                        id="descuentot" readonly="readonly"></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="td_sup">Su total a pagar es de: $</td>
+                    <td><input type="text" name="pagar" 
+                        id="pagart" readonly=readonly></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="td_b">
+                        <input type="button" value="Borrar"
+                        name="limpiar" onclick="borrar3()" class="boton">
+                        <input type="button" value="Calcular" 
+                        name="suma" onclick="CalcularDescuento()" class="boton">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br>
+    <div class="cuatro">
+        <form method="POST" name="formulario4">
+            <table align="center" border="1">
+                <tr>
+                    <td class="td_sup">
+                        intorduzac el total de sus calificaciones
+                        parciales
+                    </td>
+                    <td class="td_inf">
+                        Su total en porcenataje es
+                    </td>
+                <tr>
+                    <td><input type="text" name="calificaciones"
+                        onkeypress="return ValidarCal(event)"></td>
+    
+                    <td>
+                        <input type="text" name="calificacionesp"
+                        id="calfp" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup">
+                        intorduzac la calificacion de su examen final
+                    </td>
+                    <td class="td_inf">
+                        Su total en porcenataje es
+                    </td>
+                <tr>
+                    <td><input type="text" name="examen"
+                        onkeypress="return ValidarCal(event)"></td>
+    
+                    <td>
+                        <input type="text" name="examenp"
+                        id="exmp" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup">
+                        intorduzaca la calificacion del trabajo final
+                    </td>
+                    <td class="td_inf">
+                        Su total en porcenataje es
+                    </td>
+                <tr>
+                    <td><input type="text" name="trabajo"
+                        onkeypress="return ValidarCal(event)"></td>
+    
+                    <td>
+                        <input type="text" name="trabajop"
+                        id="trabp" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup">
+                       suma total
+                    </td>
+                    <td class="td_inf">
+                        tu calificacion es de
+                    </td>
+                <tr>
+                    <td><input type="text" name="total"
+                        id="tot" readonly="readonly"></td>
+    
+                    <td>
+                        <input type="text" name="totalp"
+                        id="totp" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_b">
+                        <input type="button" value="Borrar"
+                        name="limpiar" onclick="borrar4()" class="boton">
+                        <input type="button" value="Calcular" 
+                        name="suma" onclick="CalcularCal()" class="boton">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 </html>
