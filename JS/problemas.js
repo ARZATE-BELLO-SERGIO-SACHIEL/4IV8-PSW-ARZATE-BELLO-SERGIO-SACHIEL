@@ -25,3 +25,39 @@ function borrar(){
     document.formulario.sueldot.value = "";
 }
 
+function validars(v){
+    var teclado = (document.all)?v.KeyCode:v.which;
+    if(teclado==8)return true;
+
+    var patron = /[0-9\d .]/;
+    
+    var prueba = String.fromCharCode(teclado);
+    return patron.test(prueba)
+}
+
+function CalcularComisionYSalario(){
+    var valorcom = document.formulario2.ventas.value;
+    var result = parseInt(valorcom);
+    var comisiones = result*0.10;
+    var total = comisiones;
+    var valorsal = document.formulario2.salario.value;
+    var result = parseInt(valorsal);
+    var salariot = result+total;
+
+    document.formulario2.salariot.value = "$"+salariot;
+    
+    document.formulario2.comisiones.value = "$"+total;
+}
+
+function borrar2(){
+    document.formulario2.salario.value = "";
+    document.formulario2.ventas.value = "";
+    document.formulario2.comisiones.value = "";
+    document.formulario2.salariot.value = "";
+}
+
+
+ 
+
+
+
