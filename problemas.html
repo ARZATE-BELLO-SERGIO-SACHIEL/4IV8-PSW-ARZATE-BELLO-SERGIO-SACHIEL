@@ -9,194 +9,212 @@
     <title>PROBLEMAS</title>
 </head>
 <body>
-    <a href="" b></a>
+    <a name="MENU">
+        <nav><a href="#formulario1">formulario1</a>  <a href="#formulario2">formulario2</a>  <a href="#formulario3">formulario3</a>  <a href="#formulario4">formulario4</a>  <a href="#formulario5">formulario5</a>
+        <a href="#formulario6">formulario6</a>  <a href="#formulario7">formulario7</a>   <a href="#formulario8">formulario8</a>   <a href="#formulario9">formulario9</a>  <a href="#formulario10">formulario10</a> <a href="index.html">VAMOS AL INDEX</a></nav>
+    </a>
+    
     <div>
         <center><H1>PROBLEMAS SECUENCIALES</H1></center>
     </div>
-    <div class="uno">
-        <form method="post" name="formulario">
-            <table align="center" border="1">
-                <tr>
-                    <td class="td_sup" >Introduce la cantidad a invertir : $</td>
-                    <td class="td_inf" ><input type="text" name="cantidad"
-                        onkeypress="return validar(event)" class="input_text"></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td class="td_sup">Introduce el numero de meses</td>
-                    <td class="td_inf"><input type="text" name="mes"
-                        onkeypress="return validar(event)" class="input_text"></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td class="td_sup">Su saldo total con interes al 2% es:</td>
-                    <td> <input type="text" name="sueldot"
-                        id="cantidadt" readonly="readonly" 
-                        class="input_text" ></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td><input type="button" value="borrar" 
-                        name="limpiar" onclick="borrar()"></td>
-                    <td><input type="button" value="interes"
-                        name="enviar" onclick="interes()" > </td> 
-                </tr>
-            </table>
-        </form>
-    </div>
     <br>
-    <div class="dos">
-        <form method="post" name="formulario2">
-            <table align="center" border="1">
-                <tr>
-                    <td class="td_sup">Introduza de cuanto es su salario: $</td>
-                    <td class="td_inf"><input type="text" name="salario"
-                        onkeypress="return validars(event)"></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td class="td_sup">Introsuzca cuanto vendio en el mes: $</td>
-                    <td class="td_inf"><input type="text" name="ventas"
-                        onkeypress="return validars(event)"></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td>Total de comisiones adquiridas: $</td>
-                    <td><input type="text" name="comisiones"
-                        id="ganado" readonly="readonly"></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td>Salario con comisiones: $</td>
-                    <td><input type="text" name="salariot"
-                        id="ventast" readonly="readonly"></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td class="td_b">
-                        <input type="button" value="Borrar"
-                        name="limpiar" onclick="borrar2()" class="boton">
-                        <input type="button" value="Calcular" 
-                        name="suma" onclick="CalcularComisionYSalario()" class="boton">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
+    <a name="formulario1"></a>
+        <div class="uno">
+            <form method="post" name="formulario">
+                <table align="center" border="1">
+                    <tr>
+                        <td class="td_sup" >Introduce la cantidad a invertir : $</td>
+                        <td class="td_inf" ><input type="text" name="cantidad"
+                            onkeypress="return validar(event)" class="input_text"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td class="td_sup">Introduce el numero de meses</td>
+                        <td class="td_inf"><input type="text" name="mes"
+                            onkeypress="return validar(event)" class="input_text"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td class="td_sup">Su saldo total con interes al 2% es:</td>
+                        <td> <input type="text" name="sueldot"
+                            id="cantidadt" readonly="readonly" 
+                            class="input_text" ></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type="button" value="borrar" 
+                            name="limpiar" onclick="borrar()"></td>
+                        <td><input type="button" value="interes"
+                            name="enviar" onclick="interes()" > </td> 
+                    </tr>
+                </table>
+            </form>
+            <a href="#MENU">MENU</a>
+        </div>  
+    </a>
     <br>
-    <div class="tres">
-        <form method="POST" name="formulario3">
-            <table align="center" border="1">
-                <tr>
-                    <td class="td_sup">Ingrese el total de su compra: $</td>
-                    <td><input type="text" name="compra"
-                        onkeypress="return validard(event)"></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td class="td_sup">Tiene un descuento de: $</td>
-                    <td><input type="text" name="descuento"
-                        id="descuentot" readonly="readonly"></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td class="td_sup">Su total a pagar es de: $</td>
-                    <td><input type="text" name="pagar" 
-                        id="pagart" readonly=readonly></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td class="td_b">
-                        <input type="button" value="Borrar"
-                        name="limpiar" onclick="borrar3()" class="boton">
-                        <input type="button" value="Calcular" 
-                        name="suma" onclick="CalcularDescuento()" class="boton">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
+    <a name="formulario2">
+        <div class="dos">
+            <form method="post" name="formulario2">
+                <table align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Introduza de cuanto es su salario: $</td>
+                        <td class="td_inf"><input type="text" name="salario"
+                            onkeypress="return validars(event)"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td class="td_sup">Introsuzca cuanto vendio en el mes: $</td>
+                        <td class="td_inf"><input type="text" name="ventas"
+                            onkeypress="return validars(event)"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>Total de comisiones adquiridas: $</td>
+                        <td><input type="text" name="comisiones"
+                            id="ganado" readonly="readonly"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>Salario con comisiones: $</td>
+                        <td><input type="text" name="salariot"
+                            id="ventast" readonly="readonly"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td class="td_b">
+                            <input type="button" value="Borrar"
+                            name="limpiar" onclick="borrar2()" class="boton">
+                            <input type="button" value="Calcular" 
+                            name="suma" onclick="CalcularComisionYSalario()" class="boton">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <a href="#MENU">MENU</a>
+        </div>
+    </a>
     <br>
-    <div class="cuatro">
-        <form method="POST" name="formulario4">
-            <table align="center" border="1">
-                <tr>
-                    <td class="td_sup">
-                        intorduzac el total de sus calificaciones
-                        parciales
-                    </td>
-                    <td class="td_inf">
-                        Su total en porcenataje es (total 55%)
-                    </td>
-                <tr>
-                    <td><input type="text" name="calificaciones"
-                        onkeypress="return ValidarCal(event)"></td>
-    
-                    <td>
-                        <input type="text" name="calificacionesp"
-                        id="calfp" readonly="readonly">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td_sup">
-                        intorduzac la calificacion de su examen final
-                    </td>
-                    <td class="td_inf">
-                        Su total en porcenataje es (total 30%)
-                    </td>
-                <tr>
-                    <td><input type="text" name="examen"
-                        onkeypress="return ValidarCal(event)"></td>
-    
-                    <td>
-                        <input type="text" name="examenp"
-                        id="exmp" readonly="readonly">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td_sup">
-                        intorduzaca la calificacion del trabajo final 
-                    </td>
-                    <td class="td_inf">
-                        Su total en porcenataje es (total 15%)
-                    </td>
-                <tr>
-                    <td><input type="text" name="trabajo"
-                        onkeypress="return ValidarCal(event)"></td>
-    
-                    <td>
-                        <input type="text" name="trabajop"
-                        id="trabp" readonly="readonly">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td_sup">
-                       suma total
-                    </td>
-                    <td class="td_inf">
-                        tu calificacion es de
-                    </td>
-                <tr>
-                    <td><input type="text" name="total"
-                        id="tot" readonly="readonly"></td>
-    
-                    <td>
-                        <input type="text" name="totalp"
-                        id="totp" readonly="readonly">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td_b">
-                        <input type="button" value="Borrar"
-                        name="limpiar" onclick="borrar4()" class="boton">
-                        <input type="button" value="Calcular" 
-                        name="suma" onclick="CalcularCal()" class="boton">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
+    <a name="formulario3">
+        <div class="tres">
+            <form method="POST" name="formulario3">
+                <table align="center" border="1">
+                    <tr>
+                        <td class="td_sup">Ingrese el total de su compra: $</td>
+                        <td><input type="text" name="compra"
+                            onkeypress="return validard(event)"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td class="td_sup">Tiene un descuento de: $</td>
+                        <td><input type="text" name="descuento"
+                            id="descuentot" readonly="readonly"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td class="td_sup">Su total a pagar es de: $</td>
+                        <td><input type="text" name="pagar" 
+                            id="pagart" readonly=readonly></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td class="td_b">
+                            <input type="button" value="Borrar"
+                            name="limpiar" onclick="borrar3()" class="boton">
+                            <input type="button" value="Calcular" 
+                            name="suma" onclick="CalcularDescuento()" class="boton">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <a href="#MENU">MENU</a>
+        </div>
+    </a>
     <br>
+    <a name="formulario4">
+        <div class="cuatro">
+            <form method="POST" name="formulario4">
+                <table align="center" border="1">
+                    <tr>
+                        <td class="td_sup">
+                            intorduzac el total de sus calificaciones
+                            parciales
+                        </td>
+                        <td class="td_inf">
+                            Su total en porcenataje es (total 55%)
+                        </td>
+                    <tr>
+                        <td><input type="text" name="calificaciones"
+                            onkeypress="return ValidarCal(event)"></td>
+        
+                        <td>
+                            <input type="text" name="calificacionesp"
+                            id="calfp" readonly="readonly">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_sup">
+                            intorduzac la calificacion de su examen final
+                        </td>
+                        <td class="td_inf">
+                            Su total en porcenataje es (total 30%)
+                        </td>
+                    <tr>
+                        <td><input type="text" name="examen"
+                            onkeypress="return ValidarCal(event)"></td>
+        
+                        <td>
+                            <input type="text" name="examenp"
+                            id="exmp" readonly="readonly">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_sup">
+                            intorduzaca la calificacion del trabajo final 
+                        </td>
+                        <td class="td_inf">
+                            Su total en porcenataje es (total 15%)
+                        </td>
+                    <tr>
+                        <td><input type="text" name="trabajo"
+                            onkeypress="return ValidarCal(event)"></td>
+        
+                        <td>
+                            <input type="text" name="trabajop"
+                            id="trabp" readonly="readonly">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_sup">
+                           suma total
+                        </td>
+                        <td class="td_inf">
+                            tu calificacion es de
+                        </td>
+                    <tr>
+                        <td><input type="text" name="total"
+                            id="tot" readonly="readonly"></td>
+        
+                        <td>
+                            <input type="text" name="totalp"
+                            id="totp" readonly="readonly">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_b">
+                            <input type="button" value="Borrar"
+                            name="limpiar" onclick="borrar4()" class="boton">
+                            <input type="button" value="Calcular" 
+                            name="suma" onclick="CalcularCal()" class="boton">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <a href="#MENU">MENU</a>
+        </div>
+    </a>
+    <br>
+    <a name="formulario5"></a>
     <div class="cinco">
         <form method="POST" name="formulario5">
             <table align="center" border="">
@@ -254,283 +272,254 @@
                 </tr>
             </table>
         </form>
+        <a href="#MENU">MENU</a>
     </div>
     <br>
-    <div class="uno">
-        <form method="POST" name="formulario6">
-            <table align="center" border="1">
-                <tr>
-                    <td>
-                        Ingrese su año de nacimiento 
-                    </td>
-                    <td><input type="text" name="nacimiento"
-                        onkeypress="return ValidarAno(event)"></td>
-                </tr>
-                <tr>
-                    <td>Usted tiene</td>
-                    <td><input type="text" name="edad" 
-                        id="edadc" readonly="readonly"></td>
-                </tr>
-                <tr>
-                    <td class="td_b">
-                        <input type="button" value="Calcular edad"
-                        name="edadb" onclick="CalcularEdad()" id="botonespecial">
-                        <input type="button" value="Borrar"
-                        name="eliminar" onclick="borrar6()" class="boton">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
+    <a name="formulario6">
+        <div class="uno">
+            <form method="POST" name="formulario6">
+                <table align="center" border="1">
+                    <tr>
+                        <td>
+                            Ingrese su año de nacimiento 
+                        </td>
+                        <td><input type="text" name="nacimiento"
+                            onkeypress="return ValidarAno(event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Usted tiene</td>
+                        <td><input type="text" name="edad" 
+                            id="edadc" readonly="readonly"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_b">
+                            <input type="button" value="Calcular edad"
+                            name="edadb" onclick="CalcularEdad()" id="botonespecial">
+                            <input type="button" value="Borrar"
+                            name="eliminar" onclick="borrar6()" class="boton">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <a href="#MENU">MENU</a>
+        </div>
+    </a>
     <br>
     <center><h1>PROBLEMAS SELECTIVOS COMPUESTOS</h1></center>
     <br>
-    <div class="dos">
-        <form method="POST" name="formulario7">
-            <table align="center" border="1">
-                <tr>
-                    <td>
-                        INGRESE UN NUMERO
-                    </td>
-                    <td>
-                        <input type="text" name="num1"
-                        onkeypress="return ValidarValores(event)">
-                    </td>
+    <a name="formulario7">
+        <div class="dos">
+            <form method="POST" name="formulario7">
+                <table align="center" border="1">
+                    <tr>
+                        <td>
+                            INGRESE UN NUMERO
+                        </td>
+                        <td>
+                            <input type="text" name="num1"
+                            onkeypress="return ValidarValores(event)">
+                        </td>
+                        <tr>
+                            <td>
+                                INGRESE UN SEGUNDO NUMERO
+                            </td>
+                            <td>
+                                <input type="text" name="num2"
+                                onkeypress="return ValidarValores(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>
+                                RESULTADO OBTENIDO
+                            </td>
+                            <td>
+                                <input type="text" name="resultado"
+                                id="result" readonly="readonly">
+                            </td>
+                        </tr>
+                            <td>
+                                <input type="button" value="Calcular"
+                                name="operaciones" onclick="Calculos()" class="boton">
+                                <input type="button" value="borrar"
+                                name="eliminar" onclick="Borrar()" class="boton">
+                            </td>
+                        </tr>
+                    </tr>
+                </table>
+            </form>
+            <a href="#MENU">MENU</a>
+        </div>
+    </a>
+    <br>
+    <a name="formulario8">
+        <div class="tres">
+            <form method="POST" name="formulario8">
+                <table align="center" border="1">
+                    <tr>
+                        <td>
+                            INGRESE UN PRIMER NUMERO
+                        </td>
+                        <td>
+                            <input type="text" name="num1"
+                            onkeypress="return RevisarValores(event)">
+                        </td>
                     <tr>
                         <td>
                             INGRESE UN SEGUNDO NUMERO
                         </td>
                         <td>
                             <input type="text" name="num2"
-                            onkeypress="return ValidarValores(event)">
+                            onkeypress="return RevisarValores(event)">
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            INGRESE UN TERCER NUMERO
+                        </td>
+                        <td>
+                            <input type="text" name="num3"
+                            onkeypress="return RevisarValores(event)">
+                        </td>
+                    </tr>
                     <tr>
                         <td>
-                            RESULTADO OBTENIDO
+                            EL VALOR MAS GRANDE ES:
                         </td>
                         <td>
                             <input type="text" name="resultado"
                             id="result" readonly="readonly">
                         </td>
                     </tr>
+                    </tr>
                         <td>
-                            <input type="button" value="Calcular"
-                            name="operaciones" onclick="Calculos()" class="boton">
+                            <input type="button" value="Evaluar"
+                            name="operaciones" onclick="EvaluarValores()" class="boton">
                             <input type="button" value="borrar"
-                            name="eliminar" onclick="Borrar()" class="boton">
+                            name="eliminar" onclick="BorrarValores()" class="boton">
                         </td>
                     </tr>
-                </tr>
-            </table>
-        </form>
-    </div>
+                </table>
+            </form>
+            <a href="#MENU">MENU</a>
+        </div>
+    </a>
     <br>
-    <div class="tres">
-        <form method="POST" name="formulario8">
-            <table align="center" border="1">
-                <tr>
-                    <td>
-                        INGRESE UN PRIMER NUMERO
-                    </td>
-                    <td>
-                        <input type="text" name="num1"
-                        onkeypress="return RevisarValores(event)">
-                    </td>
-                <tr>
-                    <td>
-                        INGRESE UN SEGUNDO NUMERO
-                    </td>
-                    <td>
-                        <input type="text" name="num2"
-                        onkeypress="return RevisarValores(event)">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        INGRESE UN TERCER NUMERO
-                    </td>
-                    <td>
-                        <input type="text" name="num3"
-                        onkeypress="return RevisarValores(event)">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        EL VALOR MAS GRANDE ES:
-                    </td>
-                    <td>
-                        <input type="text" name="resultado"
-                        id="result" readonly="readonly">
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        <input type="button" value="Evaluar"
-                        name="operaciones" onclick="EvaluarValores()" class="boton">
-                        <input type="button" value="borrar"
-                        name="eliminar" onclick="BorrarValores()" class="boton">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
+    <a name="formulario9">
+        <div class="cuatro">
+            <form method="POST" name="formulario9">
+                <table align="center" border="1">
+                    <tr>
+                    <tr>
+                        <td></td>
+                        <td>PAGO POR HORA 1000$</td>
+                        <td>PAGO: $</td>
+                    </tr>
+                        <td>
+                            INGRESE LAS HORAS QUE TRABAJO
+                        </td>
+                        <td>
+                            <input type="text" name="horas"
+                            onkeypress="return RevisarHoras(event)">
+                        </td>
+    
+                    <tr>
+                        <td>
+                            HORAS PAGADAS AL DOBLE
+                        </td>
+                        <td>
+                            <input type="text" name="num2"
+                            id="doble" readonly="readonly">
+                        </td>
+                        <td>
+                            <input type="text" name="pago2"
+                            id="pago_2" readonly="readonly">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HORAS PAGADAS AL TRIPLE
+                        </td>
+                        <td>
+                            <input type="text" name="num3"
+                            id="triple" readonly="readonly">
+                        </td>
+                        <td>
+                            <input type="text" name="pago3"
+                            id="pago_3" readonly="readonly">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            TOTAL DE HORAS EXTRAS
+                        </td>
+                        <td>
+                            <input type="text" name="resultado"
+                            id="result" readonly="readonly">
+                        </td>
+                        <td>
+                            <input type="text" name="pagot"
+                            id="pago_t" readonly="readonly">
+                        </td>
+                    </tr>
+                    </tr>
+                        <td>
+                            <input type="button" value="Calcular"
+                            name="operaciones" onclick="CalcularHoras()" class="boton">
+                            <input type="button" value="borrar"
+                            name="eliminar" onclick="BorrarHoras()" class="boton">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <a href="#MENU">MENU</a>
+        </div>
+    </a>
     <br>
-    <div class="cuatro">
-        <form method="POST" name="formulario9">
-            <table align="center" border="1">
-                <tr>
-                <tr>
-                    <td></td>
-                    <td>PAGO POR HORA 1000$</td>
-                    <td>PAGO: $</td>
-                </tr>
-                    <td>
-                        INGRESE LAS HORAS QUE TRABAJO
-                    </td>
-                    <td>
-                        <input type="text" name="horas"
-                        onkeypress="return RevisarHoras(event)">
-                    </td>
-
-                <tr>
-                    <td>
-                        HORAS PAGADAS AL DOBLE
-                    </td>
-                    <td>
-                        <input type="text" name="num2"
-                        id="doble" readonly="readonly">
-                    </td>
-                    <td>
-                        <input type="text" name="pago2"
-                        id="pago_2" readonly="readonly">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        HORAS PAGADAS AL TRIPLE
-                    </td>
-                    <td>
-                        <input type="text" name="num3"
-                        id="triple" readonly="readonly">
-                    </td>
-                    <td>
-                        <input type="text" name="pago3"
-                        id="pago_3" readonly="readonly">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        TOTAL DE HORAS EXTRAS
-                    </td>
-                    <td>
-                        <input type="text" name="resultado"
-                        id="result" readonly="readonly">
-                    </td>
-                    <td>
-                        <input type="text" name="pagot"
-                        id="pago_t" readonly="readonly">
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        <input type="button" value="Calcular"
-                        name="operaciones" onclick="CalcularHoras()" class="boton">
-                        <input type="button" value="borrar"
-                        name="eliminar" onclick="BorrarHoras()" class="boton">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
-    <br>
-    <div class="cinco">
-        <form method="POST" name="formulario10">
-            <table align="center" border="1">
-                <tr>
-                    <td>
-                        AÑOS QUE LLEVA TRABAJANDO
-                    </td>
-                    <td>
-                        <input type="text" name="años"
-                        onkeypress="return ValidarTiempo(event)">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        SALAIRO ACTUAL 
-                    </td>
-                    <td>
-                        <input type="text" name="salario"
-                        onkeypress="return ValidarTiempo(event)">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        TIEMPO
-                    </td>
-                    <td>
-                        UTILIDAD
-                    </td>
-                <tr>
-                    <td>
-                        menos de 1 año
-                    </td>
-                    <td>
-                        5% del salario
-                    </td>
-                </tr>
-                    <td>
-                        1 año o mas y menos de 2 años
-                    </td>
-                    <td>
-                        7% del salario
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        2 años o mas y menos de 5 años
-                    </td>
-                    <td>
-                        10% del salario
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        5 años o mas y menos de 10 años
-                    </td>
-                    <td>
-                        15% del salario
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        10 años o mas
-                    </td>
-                    <td>
-                        20% del salario
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        USTED TIENE UNA UTILIDAD DEL :
-                    </td>
-                    <td>
-                        <input type="text" name="utilidad"
-                        id="utilidad_u" readonly="readonly">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" value="Calcular"
-                        name="operaciones" onclick="CalcularUtilidad()" class="boton">
-                        <input type="button" value="borrar"
-                        name="eliminar" onclick="BorrarDutilidads()" class="boton">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
+    <a name="formulario10">
+        <div class="cinco">
+            <form method="POST" name="formulario10">
+                <table align="center" border="1">
+                    <tr>
+                        <td>
+                            AÑOS QUE LLEVA TRABAJANDO
+                        </td>
+                        <td>
+                            <input type="text" name="años"
+                            onkeypress="return ValidarTiempo(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            SALAIRO ACTUAL 
+                        </td>
+                        <td>
+                            <input type="text" name="salario"
+                            onkeypress="return ValidarTiempo(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td>
+                            USTED TIENE UNA UTILIDAD DEL :
+                        </td>
+                        <td>
+                            <input type="text" name="utilidad"
+                            id="utilidad_u" readonly="readonly">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="Calcular"
+                            name="operaciones" onclick="CalcularUtilidad()" class="boton">
+                            <input type="button" value="borrar"
+                            name="eliminar" onclick="BorrarDutilidads()" class="boton">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <a href="#MENU">MENU</a>
+        </div>
+    </a>
 </body>
 </html>
