@@ -309,6 +309,9 @@ function BorrarValores(){
     document.formulario8.resultado.value = "";
 }
 
+
+
+
 function RevisarHoras(h){
     var teclado = (document.all)?h.KeyCode:h.which;
     if(teclado == 8)return true;
@@ -318,8 +321,6 @@ function RevisarHoras(h){
     var prueva = String.fromCharCode(teclado);
     return patron.test(prueva);
 }
-
-
 
 function CalcularHoras(){
 
@@ -340,13 +341,13 @@ function CalcularHoras(){
         document.formulario9.resultado.value = resultado;
 
         var pagosdoblesf = horasdobles*1000*2;
-        document.formulario9.pago2.value = pagosdoblesf;
+        document.formulario9.pago2.value = pagosdoblesf+"$";
 
         var pagostriplesf = horastriplesf*1000*3;
-        document.formulario9.pago3.value = pagostriplesf;
+        document.formulario9.pago3.value = pagostriplesf+"$";
 
         var pagototalf =  pagosdoblesf+pagostriplesf;
-        document.formulario9.pagot.value = pagototalf;
+        document.formulario9.pagot.value = pagototalf+"$";
 
     }else{
         var horasdoblesf = horasx/8;
@@ -366,11 +367,11 @@ function CalcularHoras(){
 
             var horasdoblespagadas = horasdoblesm*1000*2
             var horastriplespagadas = horastriples*1000*3
-            document.formulario9.pago2.value = horasdoblespagadas;
-            document.formulario9.pago3.value = horastriplespagadas;
+            document.formulario9.pago2.value = horasdoblespagadas+"$";
+            document.formulario9.pago3.value = horastriplespagadas+"$";
 
             var pagototal = horasdoblespagadas+horastriplespagadas+40000;
-            document.formulario9.pagot.value = pagototal;
+            document.formulario9.pagot.value = pagototal+"$";
 
         }else{
             var horasdoblesf = horasx/8;
@@ -383,15 +384,15 @@ function CalcularHoras(){
             document.formulario9.num3.value = horastriples;
 
             var totalf = horasdoblesf+horastriples;
-            document.formulario9.resultado.value = totalf;
+            document.formulario9.resultado.value = totalf+"$";
 
             var horasdoblespagadas = horasdoblesf*1000*2
             var horastriplespagadas = horastriples*1000*3
-            document.formulario9.pago2.value = horasdoblespagadas;
-            document.formulario9.pago3.value = horastriplespagadas;
+            document.formulario9.pago2.value = horasdoblespagadas+"$";
+            document.formulario9.pago3.value = horastriplespagadas+"$";
 
             var pagototal = horasdoblespagadas+horastriplespagadas+40000;
-            document.formulario9.pagot.value = pagototal;
+            document.formulario9.pagot.value = pagototal+"$";
         }
     } 
 }
@@ -407,7 +408,53 @@ function BorrarHoras(){
 }
 
 
- 
+ function ValidarTiempo(t){
+
+    var teclado = (document.all)?t.KeyCode:t.which;
+    if(teclado == 8)return true;
+
+    var patron = /[0-9\d .]/;
+
+    var prueva = String.fromCharCode(teclado);
+    return patron.test(prueva);
+ }
+
+ function CalcularUtilidad(){
+    var valor = document.formulario10.años.value;
+    var años = parseFloat(valor);
+    var valor1 = document.formulario10.salario.value;
+    var salario = parseFloat(valor1);
+    if(años < 1){
+        var utilidades = salario*0.05;
+        document.formulario10.utilidad.value = utilidades+"$";
+    }else{
+        if(años >= 1 & años < 2){
+            var utilidades = salario*0.07;
+            document.formulario10.utilidad.value = utilidades+"$";
+        }else{
+            if(años >= 2 & años < 5){
+                var utilidades = salario*0.07;
+                document.formulario10.utilidad.value = utilidades+"$";
+            }else{
+                if(años >= 5 & años < 10){
+                    var utilidades = salario*0.15;
+                    document.formulario10.utilidad.value = utilidades+"$";
+                }else{
+                    if(años >= 10){
+                        var utilidades = salario*0.20;
+                        document.formulario10.utilidad.value = utilidades+"$";
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ function BorrarDutilidads(){
+    document.formulario10.años.value = "";
+    document.formulario10.salario.value = "";
+    document.formulario10.utilidad.value = "";
+ }
 
 
 
