@@ -200,7 +200,7 @@ function CalcularEdad(){
     var nacimiento = parseInt(valor);
 
     if(nacimiento >= hoyparseado || nacimiento <= 1871){
-        alert("Ingrese un año valido")
+        alert("Ingrese un año valido");
         document.formulario6.nacimiento.focus();
         return false;
     }
@@ -251,6 +251,159 @@ function Borrar(){
     document.formulario7.num1.value = "";
     document.formulario7.num2.value = "";
     document.formulario7.resultado.value = "";
+}
+function RevisarValores(v){
+    var teclado = (document.all)?v.KeyCode:v.which;
+    if(teclado == 8)return true;
+
+    var patron = /[0-9\d .]/;
+
+    var prueva = String.fromCharCode(teclado);
+    return patron.test(prueva);
+}
+
+function EvaluarValores(){
+    var valor1 = document.formulario8.num1.value;
+    var num1 = parseFloat(valor1);
+    var valor2 = document.formulario8.num2.value;
+    var num2 = parseFloat(valor2);
+    var valor3 = document.formulario8.num3.value;
+    var num3 = parseFloat(valor3);
+
+    if(num1 == num2){
+        alert("INGRESE NUMEROS DIFERENTES");
+        document.formulario8.num1.focus();
+        return false;
+
+    }else{
+        if(num2 == num3){
+            alert("INGRESE NUMEROS DIFERENTES");
+            document.formulario8.num2.focus();
+            return false;
+        }else{  
+            if(num1 == num3){
+                alert("INGRESE NUMEROS DIFERENTES");
+                document.formulario8.num1.focus();
+                return false;
+            }
+        }         
+    }
+
+   if(num1 > num2 & num1 > num3){
+        document.formulario8.resultado.value = num1;
+   }else{
+       if(num2 > num1 & num2 > num3){
+        document.formulario8.resultado.value = num2;
+       }else{
+           if(num3 > num1 & num3 > num2){
+            document.formulario8.resultado.value = num3;
+           }
+       }
+   }
+}
+
+function BorrarValores(){
+    document.formulario8.num1.value = "";
+    document.formulario8.num2.value = "";
+    document.formulario8.num3.value = "";
+    document.formulario8.resultado.value = "";
+}
+
+function RevisarHoras(h){
+    var teclado = (document.all)?h.KeyCode:h.which;
+    if(teclado == 8)return true;
+
+    var patron = /[0-9\d .]/;
+
+    var prueva = String.fromCharCode(teclado);
+    return patron.test(prueva);
+}
+
+
+
+function CalcularHoras(){
+
+    var valor = document.formulario9.horas.value;
+    var num1 = parseInt(valor);
+    if(num1 < 40 || num1 == 0 || num1 == ""){
+        alert("INGRESE UN VALOR VALIDO");
+        document.formulario9.horas.focus();
+        return false;
+    }
+    var horasx = num1-40;
+    if(horasx <= 8){
+        var horasdobles = horasx;
+        var horastriplesf = 0;
+        document.formulario9.num2.value = horasdobles;
+        document.formulario9.num3.value = horastriplesf;
+        var resultado = horasdobles+horastriplesf;
+        document.formulario9.resultado.value = resultado;
+
+        var pagosdoblesf = horasdobles*1000*2;
+        document.formulario9.pago2.value = pagosdoblesf;
+
+        var pagostriplesf = horastriplesf*1000*3;
+        document.formulario9.pago3.value = pagostriplesf;
+
+        var pagototalf =  pagosdoblesf+pagostriplesf;
+        document.formulario9.pagot.value = pagototalf;
+
+    }else{
+        var horasdoblesf = horasx/8;
+        var horasdoblesc = horasdoblesf%1;
+        var horasdoblesint = horasdoblesf-horasdoblesc;
+        var horasdoblesintp = horasdoblesint*8
+
+        if(horasdoblesintp > 1){
+            var horasdoblesm = 8;
+            document.formulario9.num2.value = horasdoblesm;
+
+            var horastriples = horasx-8;
+            document.formulario9.num3.value = horastriples;
+
+            var totalf = horasdoblesm+horastriples;
+            document.formulario9.resultado.value = totalf;
+
+            var horasdoblespagadas = horasdoblesm*1000*2
+            var horastriplespagadas = horastriples*1000*3
+            document.formulario9.pago2.value = horasdoblespagadas;
+            document.formulario9.pago3.value = horastriplespagadas;
+
+            var pagototal = horasdoblespagadas+horastriplespagadas+40000;
+            document.formulario9.pagot.value = pagototal;
+
+        }else{
+            var horasdoblesf = horasx/8;
+            var horasdoblesc = horasdoblesf%1;
+            var horasdoblesint = horasdoblesf-horasdoblesc;
+            var horasdoblesintp = horasdoblesint*8
+            var horastriples = horasx-8;
+
+            document.formulario9.num2.value =  horasdoblesintp;
+            document.formulario9.num3.value = horastriples;
+
+            var totalf = horasdoblesf+horastriples;
+            document.formulario9.resultado.value = totalf;
+
+            var horasdoblespagadas = horasdoblesf*1000*2
+            var horastriplespagadas = horastriples*1000*3
+            document.formulario9.pago2.value = horasdoblespagadas;
+            document.formulario9.pago3.value = horastriplespagadas;
+
+            var pagototal = horasdoblespagadas+horastriplespagadas+40000;
+            document.formulario9.pagot.value = pagototal;
+        }
+    } 
+}
+
+function BorrarHoras(){
+    document.formulario9.horas.value = "";
+    document.formulario9.num2.value = "";
+    document.formulario9.num3.value = "";
+    document.formulario9.resultado.value = "";
+    document.formulario9.pagot.value = "";
+    document.formulario9.pago2.value = "";
+    document.formulario9.pago3.value = "";
 }
 
 
