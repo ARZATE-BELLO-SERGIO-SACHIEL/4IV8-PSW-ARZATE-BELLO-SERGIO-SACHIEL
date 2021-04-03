@@ -11,8 +11,17 @@ table{
     color: white;
 }
 
+a{
+    font-size: 20px;
+    color: white;
+}
 
-    
+nav{
+    background-color: black;
+    border: solid magenta;
+    padding: 10px;
+    text-align: center;
+}
 
 .td_sup{
      border-radius: 9px;
