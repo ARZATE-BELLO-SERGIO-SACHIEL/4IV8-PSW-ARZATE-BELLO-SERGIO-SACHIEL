@@ -1,3 +1,14 @@
+function validar(e){
+    var teclado = (document.all)?e.keyCode:e.which;
+    if(teclado == 8)return true;
+
+    var patron = /[QAZWSXEDCRFVTGBYHNUJMIKOLPÑ,]/;
+
+    var prueba = String.fromCharCode(teclado);
+    return patron.test(prueba);
+}
+
+
 function problema1(){
 
     var p1_input = document.querySelector('#p1-input').value;
@@ -17,6 +28,8 @@ function problema1(){
     //imprimir el resultado
     document.querySelector('#p1-output').textContent = p1_res;
 }
+
+
 
 
 //si es el principio o es el final de la cadena
@@ -71,5 +84,46 @@ function problema2(){
 }
 
 function problema3(){
-    alert("Ahi lo hacen tengo sueñito uwu/");
+
+    var maximo = 0;
+    var tres_input;
+    var tres_array;
+    var alfabeto = [27];
+    var auxiliar;
+    var mayor;
+
+    tres_input = document.querySelector('#p3-input').value;
+
+    tres_array = tres_input.split(',');
+
+    tres_array.forEach(function(palabra){
+
+        for(var i = 0; i<26; i++){
+
+            alfabeto[i] = 0;
+        }
+
+        auxiliar = 0;
+
+        for(var i = 0; i<palabra.length; i++){
+
+            if(alfabeto[palabra.charCodeAt(i)-65] == 0){
+
+                auxiliar++;
+
+                alfabeto[palabra.charCodeAt(i)-65] = 1; 
+            }
+        }
+
+        if(auxiliar > maximo){
+            
+            maximo = auxiliar;
+
+            mayor = palabra;
+
+        }
+
+    });
+
+    document.querySelector('#p3-output').textContent = "la palabra con mas carateres diferentes es: " + mayor;
 }
