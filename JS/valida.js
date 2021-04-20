@@ -28,7 +28,7 @@ function valida(formulario){
 
         if(j == checkOk.length){
             allValid = false;
-            break;
+            break;s
         }
     }
 
