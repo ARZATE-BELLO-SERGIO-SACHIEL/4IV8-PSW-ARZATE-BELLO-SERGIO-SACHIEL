@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo_index.css">
+    <link href="CSS/Registro.css" rel="stylesheet">
+    <title>REGISTRO</title>
+</head>
+<body>
+    <div class="arriba">
+        <table class="navegacion" width="100%" >
+            <tbody>
+                <tr>
+                    <td class="navegacion">
+                        <div class="imagen">
+                            <img src="./IMG/logo.png" alt="logo" width="150" height="50">
+                        </div>
+                    </td>
+                    <td class="navegacion">
+                        <nav class="barra">
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="registro.html">
+                                        Registrarse
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="iniciar.html">
+                                        Iniciar
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        
+    <br>
+    <br>
+    <br>
+    
+    <div>
+        <form method="post" name="formulario" action="registro.jsp">
+           <div>
+              <center>
+                 <table cellspacing="5px">
+                    <tr>
+                       <td align="right">
+                          <label>NOMBRE</label>
+                       </td>
+                       <td>
+                          <input type="text" name="nombre">
+                       </td>
+                    </tr>
+                    <tr>
+                       <td align="right">
+                          <label>APELLIDO PATERNO</label>
+                       </td>
+                       <td>
+                          <input type="text" name="appat">
+                       </td>
+                    </tr>
+                    <tr>
+                       <td align="right">
+                          <label>APELLIDO MATERNO</label>
+                       </td>
+                       <td>
+                          <input type="text" name="apmat">
+                       </td>
+                    </tr>
+                    <tr>
+                       <td align="right">
+                          <label>EDAD</label>
+                       </td>
+                       <td>
+                          <input type="number" name="edad">
+                       </td>
+                    </tr>
+                    <tr>
+                       <td align="right">
+                          <label>CALLE</label>
+                       </td>
+                       <td>
+                          <input type="text" name="calle">
+                       </td>
+                    </tr>
+                    <tr>
+                       <td align="right">
+                          <label>COLONIA</label>
+                       </td>
+                       <td>
+                          <input type="text" name="colonia">
+                       </td>
+                    </tr>
+                     <tr>
+                       <td align="right">
+                          <label>DELEGACION</label>
+                       </td>
+                       <td>
+                          <input type="text" name="delegacion">
+                       </td>
+                    </tr>
+                    <tr>
+                       <td align="right">
+                          <label>USUARIO</label>
+                       </td>
+                       <td>
+                          <input type="text" name="usuario">
+                       </td>
+                    </tr>
+                    <tr>
+                       <td align="right">
+                          <label>CONTRASEÑA</label>
+                       </td>
+                       <td>
+                          <input type="password" name="contraseña">
+                       </td>
+                    </tr>
+                    <tr>
+                       <td>
+                           <label>FECHA DE NACIMIENTO</label>
+                       </td>
+                       <td align="right">
+                          <input type="date" name="nacimiento">
+                       </td>
+                    </tr>
+                     <tr>
+                       <td>
+                           <label>TELEFONO</label>
+                       </td>
+                       <td align="right">
+                          <input type="text" name="tel">
+                       </td>
+                    </tr>
+                    <tr>
+                       <td>
+                           <input type="submit" value="ENVIAR REGISTRO">
+                       </td>
+                       <td>
+                          <input type="reset" value="LIMPIAR REGISTRO">
+                       </td>
+                    </tr>
+                 </table>
+              </center>
+           </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form method="post" name="formularioid" action="conusuario.jsp">
+            <table>
+            </table>
+        </form>
+     </div>
+</body>
+</html>
